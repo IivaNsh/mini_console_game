@@ -2,7 +2,7 @@
 all: mini_console_game
 
 mini_console_game:main.o
-	g++ -Wall -o mini_console_game main.o -I../include -lcurses
+	g++ -Wall -o mini_console_game main.o -lcurses
 
 main.o: ../src/main.cpp
 	g++ -Wall -c main.o ../src/main.cpp -I../include
